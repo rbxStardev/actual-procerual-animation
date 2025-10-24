@@ -4,7 +4,8 @@ const ANCHOR = preload("uid://jd5riuef2mjt")
 const CONTROLLER = preload("uid://bwb7cde7bk21g")
 
 #@export var points: Array[float] = [64, 84, 87, 85, 83, 77, 64, 60, 51, 38, 34, 32, 19, 15]
-@export var points: Array[float] = [52, 58, 40, 60, 68, 71, 65, 50, 28, 15, 11, 9, 7, 7]
+@export var points: Array[float] = [52, 58, 50, 60, 68, 71, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 5]
+#@export var points: Array[float] = [64, 64]
 
 var point_array: Array[Anchor]
 

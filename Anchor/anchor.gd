@@ -26,5 +26,8 @@ func _physics_process(delta: float) -> void:
 	
 	var vector_to_point: Vector2 = (point.global_position - global_position).normalized()
 	var desired_position: Vector2 = vector_to_point * desired_distance
-	#global_rotation = atan2(vector_to_point.y, vector_to_point.x)
+	
+	var point_to_vector: Vector2 = (global_position - point.global_position).normalized()
+	
 	point.global_position = global_position + desired_position
+	point.global_rotation = atan2(point_to_vector.y, point_to_vector.x)
